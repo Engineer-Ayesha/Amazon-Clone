@@ -1,0 +1,659 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box{
+    background-color: black;
+    height:60px;
+    display: flex;
+    color:blue;
+    flex-direction: row;
+    justify-content: space-evenly;
+    #panel{
+        margin-top: 10px;
+        img{
+            height:50px;
+            width:90px;
+        }
+    }
+    #frame{
+        display:flex;
+        #A{
+            color:white;
+            margin-top: 30px;
+        }
+        #B{
+            color:white;
+            margin-top: 20px;
+            font-size: small;
+        }
+    }
+    #block{
+        display: flex;
+        #All{
+            background-color: rgba(235, 237, 231);
+            color:gray;
+            height:29px;
+            width:50px;
+            text-align: center;
+            font-size: 13px;
+            margin-top: 20px;
+            border-right: solid 5px rgba(235, 237, 231);
+            flex-grow: 1;
+        }
+        input{
+            background-color: white;
+            color:gray;
+            height:29px;
+            width:400px;
+            margin-top: 18px;
+            border-left: 1px solid white;
+        }
+        #C{
+            height:34px;
+            width:40px;
+            background-color:sandybrown;
+            margin-top: 18px;
+            color:black;
+            border-left: 1px solid sandybrown;
+        }
+    }
+    #wrap{
+        color:white;
+        margin-top: 28px;
+    }
+    #shell{
+        color:white;
+        margin-top: 20px;
+        font-size: small;
+    }
+    #layer{
+        color:white;
+        margin-top: 20px;
+        font-size: small;
+    }
+    #zone{
+        display: flex;
+        color:white;
+        margin-top: 20px;
+        font-size: small;
+        #D{
+            font-size: 30px;
+            flex-grow: 1px;
+        }
+        #E{
+            margin-top: 15px;
+        }
+    }
+}
+.area{
+    height:30px;
+    background-color: rgb(38, 51, 68);
+    color:white;
+    display:flex;
+    flex-direction: row;
+    padding-top: 20px;
+    font-size: medium;
+    .stack{
+        margin-left:30px ;
+        font-size: medium;
+    }
+    #unit{
+        display: flex;
+        margin-left: 20px;
+        
+        #item{
+            height:20px;
+            flex-grow: 1px;
+        }
+        #group{
+            font-size: small;
+            font-size: medium;
+        }
+    }
+}
+.field{
+    background-image: url(background.jpg);
+    background-size: cover;
+    height:600px;
+    display: flex;
+    justify-content: space-evenly;
+    animation:backgroundChange 5s ease-in-out 10s infinite alternate;
+    .entry{
+        margin-top: 250px;
+        height:350px;
+        width:290px;
+        background-color:floralwhite;
+        color:black;
+        .action{
+            color:black;
+            font-size: 23px;
+            margin-top: 10px;
+        }
+         .trigger{
+            color:blueviolet;
+            margin-top: 20px;
+            font-size: 13px;
+            margin-left: 50px;
+        }
+    }
+    #title{
+         display:flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+        .toggle{
+            margin-left: 10px;
+            height:75px;
+            width:130px;
+            img{
+                height:75px;
+                width:130px;
+            }
+            .state{
+                color:black;
+                font-size: 13px;
+            }
+        }
+    }
+    #text{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .toggle{
+            margin-top: 15px;
+            margin-left: 10px;
+            height:75px;
+            width:130px;
+            img{
+                height:75px;
+                width:130px;
+            }
+            .state{
+                color:black;
+                font-size: 13px;
+            }
+        }
+    }
+    #note{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .toggle{
+            margin-top: 15px;
+            margin-left: 10px;
+            height:75px;
+            width:130px;
+            img{
+                height:75px;
+                width:130px;
+            }
+            .state{
+                color:black;
+                font-size: 13px;
+            }
+        }
+    }
+    #switch{
+        margin-left: 20px;
+        margin-top: 5px;
+        img{
+            height:280px;
+            width:250px;
+        }
+    }
+    h3{
+        margin-top: 5px;
+        margin-left: 10px;
+        color:black;
+        font-size: 23px;
+    }
+    p{
+        margin-top: 15px;
+        font-size: 13px;
+        color:blueviolet;
+    }
+}
+@keyframes backgroundChange{
+    0%{
+        background-image: url(background.jpg);
+    }
+    30%{
+        background-image: url(background.jpg);
+    }
+    30%{
+        background-image: url(Animation.jpg);
+    }
+    60%{
+        background-image: url(Animation.jpg);
+    }
+    100%{
+        background-image: url(background.jpg);
+    }
+
+}
+#image{
+    margin-top: 20px;
+    height:350px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    .media{
+        height:350px;
+        width:290px;
+        background-color:floralwhite;
+        color:black;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-evenly;
+        .content{
+            color:black;
+            font-size: 23px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .status{
+            color:blueviolet;
+            margin-top: 22px;
+            font-size: 13px;
+
+        }
+        #holder{
+            color:black;
+            font-size: 23px;
+            margin-top: 10px;
+        }
+        #alert{
+            color:blueviolet;
+            font-size: 13px;
+            margin-top: 22px;
+        }
+        .inner{
+            height:80px;
+            width:90px;
+            img{
+                height:80px;
+                width:90px;
+            }
+            .section{
+                color:black;
+                font-size: 13px;
+            }
+        }
+        #mainbox{
+            height:90px;
+            width:190px;
+            margin-right: 25px;
+            img{
+                height:90px;
+                width:190px;
+            }
+        }
+    }
+    #hint{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .outer{
+            margin-top: 15px;
+            margin-left: 10px;
+            height:80px;
+            width:130px;
+            img{
+                height:80px;
+                width:130px;
+            }
+            .subbox{
+                color:black;
+                font-size: 13px;
+            }
+
+        }
+
+    }
+    #badge{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .outer{
+            margin-top: 15px;
+            margin-left: 10px;
+            height:80px;
+            width:130px;
+            img{
+                height:80px;
+                width:130px;
+            }
+            .subbox{
+                color:black;
+                font-size: 13px;
+            }
+
+        }
+    }
+    #icon{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .outer{
+            margin-top: 15px;
+            margin-left: 10px;
+            height:80px;
+            width:130px;
+            img{
+                height:80px;
+                width:130px;
+            }
+            .subbox{
+                color:black;
+                font-size: 13px;
+            }
+
+        }
+    }
+}
+#surface{
+    height:300px;
+    background-color: floralwhite;
+    margin-top: 20px;
+    #layout{
+        margin-left: 20px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    #copy{
+        display:flex;
+        flex-direction: row;
+        margin-top: 10px;
+        .boxes{
+        height:250px;
+        width:150px;
+        background-color: white;
+        img{
+            height:250px;
+            width:150px;
+        }
+        /* margin-top: 100px; */
+        }
+    }
+}
+#canva{
+    height:30px;
+    background-color:#37475A;
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-size: 13px;
+    padding-top: 18px;
+}
+#portal{
+    height:300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(38, 51, 68);
+    .anchor{
+        height:300px;
+        width:250px;
+        background-color:rgb(38, 51, 68);
+        color:white;
+        padding-top: 30px;
+        padding-left: 70px;
+        font-size: 13px;
+        .bridge{
+            padding-top: 10px;
+        }
+        h3{
+            font-size: 15px;
+        }
+    }
+}
+#matrix{
+    height:100px;
+    background-color:rgb(38, 51, 68) ;
+    border-top:0.1px solid grey;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    color:white;
+    #signal{
+        height:90px;
+        width:100px;
+        background-image: url(footer.jpg);
+        background-size: cover;
+    }
+    #vector{
+        font-size: 11.5px;
+        color:white;
+        padding-top: 2px;
+        background-color:rgb(38, 51, 68) ;
+        padding-left: 5px;
+        border:1.5px solid gray;
+        margin-top: 30px;
+        margin-left: 40px;
+        height:35px;
+        width:90px;
+        border-radius: 5px;
+
+    }
+    #module{
+        font-size: 11.5px;
+        color:white;
+        padding-top: 5px;
+        padding-left: 10px;
+        border:1.5px solid gray;
+        border-radius: 5px;
+        background-color:rgb(38, 51, 68) ;
+        margin-top: 30px;
+        margin-left: 10px;
+        height:35px;
+        width:150px;
+    }
+    #element{
+        font-size: 11.5px;
+        color:white;
+        padding-top: 5px;
+        padding-left: 10px;
+        border:1.5px solid gray;
+        background-color:rgb(38, 51, 68) ;
+        margin-top: 30px;
+        margin-left: 10px;
+        height:35px;
+        width:120px;
+        border-radius: 5px;
+    }
+}
+#control{
+    height:530px;
+    background-color: #131a22;
+    display:flex;
+    flex-direction: row;
+    .pattern{
+        height:500px;
+        width:200px;
+        background-color: #131a22;
+        margin-top: 20px;
+    }
+    #object{
+        display: flex;
+        flex-direction: column;
+        
+        .wrapper{
+            height:100px;
+            width:80px;
+            background-color: #131a22;
+            margin-left: 30px;
+            margin-top: 30px;
+            padding-left: 50px;
+            h6{
+                color:white;
+                font-size: 12px;
+
+            }
+            p{
+                color:#999999;
+                font-size: 12px;
+                padding-top: 5px;
+            }
+        }
+    }
+    #structure{
+        display: flex;
+        flex-direction: column;
+        .container{
+            height:100px;
+            width:80px;
+            background-color: #131a22;
+            margin-left: 30px;
+            margin-top: 30px;
+            padding-left: 50px;
+            h6{
+                color:white;
+                font-size: 12px;
+
+            }
+            p{
+                color:#999999;
+                font-size: 12px;
+                padding-top: 5px;
+            }
+            
+        }
+
+    }
+    #content{
+        display: flex;
+        flex-direction: column;
+        .submit{
+            height:100px;
+            width:80px;
+            background-color:#131a22;
+            margin-left: 30px;
+            margin-top: 30px;
+            padding-left: 50px;
+            h6{
+                color:white;
+                font-size: 12px;
+
+            }
+            p{
+                color:#999999;
+                font-size: 12px;
+                padding-top: 5px;
+            }
+            
+        }
+
+    }
+    #variant{
+        display: flex;
+        flex-direction: column;
+        .Drop{
+            height:100px;
+            width:80px;
+            background-color:#131a22;
+            margin-left: 30px;
+            margin-top: 30px;
+            padding-left: 50px;
+            h6{
+                color:white;
+                font-size: 12px;
+
+            }
+            p{
+                color:#999999;
+                font-size: 12px;
+                padding-top: 5px;
+            }
+            
+        }
+    }
+    #feature{
+        display: flex;
+        flex-direction: column;
+        .Down{
+            height:100px;
+            width:80px;
+            background-color: #131a22;
+            margin-left: 30px;
+            margin-top: 30px;
+            padding-left: 50px;
+            h6{
+                color:white;
+                font-size: 12px;
+
+            }
+            p{
+                color:#999999;
+                font-size: 12px;
+                padding-top: 5px;
+            }
+        }
+    }
+    #control{
+        display: flex;
+        flex-direction: column;
+        .loop{
+            height:100px;
+            width:80px;
+            background-color: #131a22;
+            margin-left: 30px;
+            margin-top: 30px;
+            padding-left: 50px;
+            h6{
+                color:white;
+                font-size: 12px;
+
+            }
+            p{
+                color:#999999;
+                font-size: 12px;
+                padding-top: 5px;
+            } 
+        }
+    }
+    #display{
+        display: flex;
+        flex-direction: column;
+        .shift{
+            height:100px;
+            width:80px;
+            background-color: #131a22;
+            margin-left: 30px;
+            margin-top: 30px;
+            padding-left: 20px;
+            h6{
+                color:white;
+                font-size: 12px;
+
+            }
+            p{
+                color:#999999;
+                font-size: 12px;
+                padding-top: 5px;
+            }  
+        }
+    }
+}
+#state{
+    height:70px;
+    background-color:#131a22;
+    display: flex;
+    justify-content: center;
+    p{
+        color:white;
+        font-size: 11px;
+        padding-top: 50px;
+        padding-left: 25px;
+    }
+}
+#action{
+    height:50px;
+    background-color:#131a22;
+    display: flex;
+    justify-content: center;
+    p{
+        font-size:11px;
+        color:white
+    }
+}
